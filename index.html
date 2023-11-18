@@ -1,0 +1,122 @@
+<html>
+<div id="htmlContent">
+  <head>
+   <title>MY RESUME</title>
+   <style>
+   body {
+    background-color: ghostwhite;
+   }
+   h1 {
+    color :black;
+    text-align:center;
+   } 
+   h3 {
+    color :sandybrown;
+   }
+   h4 {
+    color :blueviolet;
+   }
+   th {
+   background-color: lavenderblush;
+   }
+   #skillsummary {
+   text-indent:50px;
+   text-align:justify;
+   }
+   #learn {
+   text-indent:50px;
+   }
+   #career {
+   text-indent:50px;
+   }
+   #declaration {
+   text-indent:50px;
+   }
+  </style>
+  </head>
+  <body> 
+  <h1> RESUME </h1>
+  <h3>SRISAKTHI S</h3>
+  <p><b>College Mail id :</b>srisakthis.cs21@kascsathy.ac.in</p>
+  <p><b> Personal Mail id:</b>s.srisakthi2002@gmail.com</p>
+  <p><b>Mobile Number :</b>9787624193</p>
+  <h3>CAREER OBJECTIVES</h3>
+  <P id="career">To get an opportunity where I can make the best of my potential and contribute to the organization's growth.</p>
+  <h3>EDUCATION</h3>  
+  <table border="3" style="width:70%">
+  <tr style="height:50px">
+  <th colspan="2">EDUCATION</th>
+  <th> INSTITUTION</th>
+  <th>YEAR OF PASSING</th>
+  <th>PERCENTAGE</th>
+  </tr>
+  <tr style="height:35px">
+  <th>UNDERGRADUATE</th>
+  <td>B.Sc Computer Science</td>
+  <td>Kaamadhenu Arts and Science College,Sathyamangalam,Erode.</td>
+  <td>Till 4th semester</td>
+  <td>77.47%</td>
+  </tr>
+  <tr style="height:35px">
+  <th>SSLC</th>
+  <td>X standard</td>
+  <td>Government Higher Secondary School,Karuvalur,Tiruppur.</td>
+  <td>2018</td>
+  <td>59.80%</td>
+  </tr>
+  <tr style="height:35px">
+  <th>HSC</th>
+  <td>XII standard</td>
+  <td>Government Higher Secondary School,Karuvalur,Tiruppur.</td>
+  <td>2020</td>
+  <td>75%</td>
+  </table>
+  <ul>
+  <li>C</li>
+  <li>c++</li>
+  <li>Java</li>
+  <li>MySQL</li>
+  <li>Linux Shell Programming</li>
+  </ul>
+  </ul>  
+  <ul>
+  <h4>CLOUD SHELL</h4> 
+  <li>How to access the c,c++,java,html,database in cloud shell.</li>
+  <h4>MYSQLITE</h4>
+  <li>to connect c and sqlite.</li>
+  <h4>MYSQL</H4>
+  <li>To connect mysql and maven</li>
+  <h3>ACHIEVEMENTS</h3>
+  <ul>
+  <li>having python course certificate</li>
+  </ul>
+  <h3>DECLARATION</h3>
+  <p id="declaration">I hereby declare that all the information given above is true and correct to the best of my knowledge.</p>
+  </body>
+<div id="editor"></div>
+
+<center>
+
+<p>
+
+
+<button onclick="printDiv('htmlContent')">Print / Save Pdf</button>
+
+</p>
+
+</center>
+
+<script type="text/javascript">
+
+      function printDiv(div_id) 
+        {
+          var divToPrint=document.getElementById(div_id);
+          var newWin=window.open('','Print-Window');
+          newWin.document.open();
+          newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
+          newWin.document.close();
+          setTimeout(function() { newWin.close();},10);
+        }
+</script>
+</htm>
+
